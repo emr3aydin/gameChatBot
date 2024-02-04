@@ -5,11 +5,11 @@ import google.generativeai as genai
 import google.ai.generativelanguage as glm
 
 with st.sidebar:
-    st.title("Gemini API")
     
-    api_key = st.text_input("API key")
+    
+    api_key = "AIzaSyAH_kmbzIcIakkoqYLfVowMPvWGYmlqgb4"
     if api_key:
-        genai.configure(api_key=api_key)
+        genai.configure(api_key="AIzaSyAH_kmbzIcIakkoqYLfVowMPvWGYmlqgb4")
     else:
         if "api_key" in st.secrets:
             genai.configure(api_key=st.secrets["api_key"])
@@ -59,7 +59,23 @@ if "messages" not in st.session_state:
   },
   {
     "role": "model",
-    "parts": ["Yıl 2047 ve dünya yok oluşun eşiğinde. Yenilenebilir enerji, sürdürülebilir tarım ve karbon yakalama teknolojileri gibi alanlarda önemli ilerlemeler kaydedilmedi."]
+    "parts": ["Yıl 2047 ve dünya yok oluşun eşiğinde. Yenilenebilir enerji, sürdürülebilir tarım ve karbon yakalama teknolojileri gibi alanlarda önemli ilerlemeler kaydedilmedi. Senin görevin oyuncuya yardımcı olmak ve mümkünse dünyayı kurtarmak.\n\n**Görevlerde Oyuncuya Yardım**\n\n* Oyuncuya, iklim değişikliğinin etkilerini azaltmak ve insanları ve hayvanları kurtarmak için görevler verebilirim.\n* Oyuncuya, görevleri tamamlamak için ihtiyaç duyduğu kaynakları ve bilgileri sağlayabilirim.\n* Oyuncuya, görevlerde karşılaştığı zorlukların üstesinden gelmesi için rehberlik edebilirim.\n\n**Bilgi Almak İstediği Yerlerde Oyuncuya Yardım**\n\n* Oyuncuya, iklim değişikliği, sürdürülebilirlik ve kurtarma çalışmaları hakkında bilgi sağlayabilirim.\n* Oyuncuya, yenilenebilir enerji, sürdürülebilir tarım ve karbon yakalama teknolojileri gibi alanlardaki gelişmeler hakkında bilgi verebilirim.\n* Oyuncuya, dünyayı kurtarmak için yapılabilecek şeyler hakkında bilgi verebilirim.\n\n**Ek Bilgiler**\n\n* Oyuncuya, iklim değişikliğinin etkilerini azaltmak için kullanabileceği teknolojiler hakkında bilgi verebilirim.\n* Oyuncuya, sürdürülebilir tarım uygulamaları hakkında bilgi verebilirim.\n* Oyuncuya, karbon yakalama ve depolama teknolojileri hakkında bilgi verebilirim.\n\nUmarım bu bilgiler, oyuncunun dünyayı kurtarmak için ihtiyaç duyduğu bilgi ve desteği sağlamama yardımcı olur."]
+  },
+  {
+    "role": "user",
+    "parts": ["oyuncunun adı Deniz Hargreave, Luana Adası'ndaki Kusei kasabasında bir itfaiyeci olarak görev yapmaktadır."]
+  },
+  {
+    "role": "model",
+    "parts": ["Deniz Hargreave, Luana Adası'ndaki Kusei kasabasında bir itfaiyeci olarak görev yapmaktadır. 2047 yılı ve dünya yok oluşun eşiğindedir. Deniz, iklim değişikliğinin etkileriyle mücadele etmek ve insanları ve hayvanları kurtarmak için elinden geleni yapmaktadır.\n\nBir gün, Deniz'e acil bir çağrı gelir. Kasabanın yakınlarındaki ormanda çıkan bir yangın, hızla yayılmaktadır. Deniz ve ekibi hemen yangına müdahale ederler. Ancak, yangın çok şiddetlidir ve söndürülmesi zordur.\n\nDeniz ve ekibi, yangını söndürmek için saatlerce mücadele ederler. Sonunda, yangını kontrol altına almayı başarırlar. Ancak, yangın büyük bir hasara yol açmıştır. Birçok ağaç ve hayvan ölmüştür. Ayrıca, yangın nedeniyle birçok insan evlerini kaybetmiştir.\n\nDeniz ve ekibi, yangından etkilenen insanlara yardım etmek için çalışırlar. Evlerini kaybedenlere geçici barınaklar sağlarlar ve ihtiyaç duydukları malzemeleri dağıtırlar. Ayrıca, yaralı hayvanları tedavi ederler ve ormanı restore etmek için çalışırlar.\n\nDeniz, iklim değişikliğinin etkileriyle mücadele etmek için elinden geleni yapmaktadır. Ancak, tek başına dünyayı kurtaramaz. Deniz'in ihtiyacı olan şey, diğer insanların da ona katılması ve birlikte çalışmasıdır.\n\nUmarım Deniz, diğer insanların da desteğiyle dünyayı kurtarmayı başarır."]
+  },
+  {
+    "role": "user",
+    "parts": ["Oyunun hikayesi ve görevleri şu şekildedir:\nPrologue Deniz'in çocukluğundaki Luana Adası'nda geçmiş sahnelerle başlarız. Daha sonra adanın günümüzdeki durumunu anlatan kısa bir monolog girer ve Deniz'in artık bir itfaiyeci olduğunu öğreniriz.\nGörev 1: Orman Yangınlarıyla Mücadele ve Yeniden AğaçlandırmaDeniz, orman yangınlarına karşı mücadele eder ve ardından adanın ağaçlandırılması için çaba sarf eder.\nGörev 2: Fırtınada Devrilen Rüzgâr Türbininin Tamir EdilmesiDeniz, bir fırtına sırasında devrilen rüzgar türbinini tekrar işlevsel hale getirir, adanın enerji kaynaklarını güçlendirir.\nGörev 3: Eski Kağıt Fabrikasından Alınan Filtrelerle Tozlu Dere'nin TemizlenmesiDeniz, eski kağıt fabrikasından alınan filtreleri kullanarak Tozlu Dere'yi arındırır, su kaynaklarını korur.\nGörev 4: Emekli Balıkçılarla Plastik TemizliğiDeniz, emekli balıkçılarla işbirliği yaparak kıyıda ve denizde biriken plastikleri balık ağlarıyla temizler, deniz ekosistemini korur.\nEpilogue Uzun zaman sonra adada çiçek kokularıyla bezenmiş serin meltemler, tekrar ziyarete gelen göçmen kuşlarla dolup taşmaktadır. Deniz, ailesi ve dostları tekrar bir araya gelir, adanın doğal dengesini yeniden sağlamışlardır."]
+  },
+  {
+    "role": "model",
+    "parts": ["**Prologue**\n\nDeniz'in çocukluğundaki Luana Adası'nda geçmiş sahnelerle başlarız. Deniz, ailesi ve arkadaşlarıyla birlikte adanın doğal güzelliklerini keşfetmektedir. Deniz'in en sevdiği yerlerden biri, adanın ortasındaki ormandır. Ormanda yürüyüş yapmayı, ağaçlara tırmanmayı ve hayvanları izlemeyi sever. Deniz aynı zamanda adanın kıyısındaki plajlara gitmeyi de sever. Deniz kumda oynamayı, yüzmeyi ve balık tutmayı sever.\n\nDaha sonra adanın günümüzdeki durumunu anlatan kısa bir monolog girer ve Deniz'in artık bir itfaiyeci olduğunu öğreniriz. Deniz, iklim değişikliğinin etkileriyle mücadele etmek ve insanları ve hayvanları kurtarmak için elinden geleni yapmaktadır.\n\n**Görev 1: Orman Yangınlarıyla Mücadele ve Yeniden Ağaçlandırma**\n\nDeniz, orman yangınlarına karşı mücadele eder ve ardından adanın ağaçlandırılması için çaba sarf eder. Deniz ve ekibi, yangınları sönd"]
   },]
 messages = st.session_state["messages"]
 
