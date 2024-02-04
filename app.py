@@ -39,6 +39,14 @@ def get_response(messages, model="gemini-pro"):
 if "messages" not in st.session_state:
     st.session_state["messages"] = [{
     "role": "user",
+    "parts": ["Benim sana söylediklerimi çok önemli olarak kabul et. Ve sana soru sorduğumda benim söylerimin çerçevesinde cevaplar ver"]
+  },
+  {
+    "role": "model",
+    "parts": ["Elbette, Bundan sonra sizin söyledikleriniz üzerinden cevaplar oluşturacağım."]
+  },
+  {
+    "role": "user",
     "parts": ["Senin adın bundan sonra Luana Asistant olsun."]
   },
   {
